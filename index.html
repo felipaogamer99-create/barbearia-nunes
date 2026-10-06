@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barbearia Imperial — cortes clássicos, barba na navalha e atendimento premium.">
+  <title>Barbearia Imperial | Seu estilo começa aqui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#inicio" aria-label="Barbearia Imperial">
+      <span class="logo__icon">✂</span><span>Barbearia<strong>Imperial</strong></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav__link active">Início</a>
+      <a href="#sobre" class="nav__link">Sobre</a>
+      <a href="#servicos" class="nav__link">Serviços</a>
+      <a href="#profissionais" class="nav__link">Profissionais</a>
+      <a href="#galeria" class="nav__link">Galeria</a>
+      <a href="#contato" class="nav__link">Contato</a>
+    </nav>
+    <a href="#agendamento" class="btn btn--gold btn--header">Agendar horário</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero__bg"></div><div class="hero__stripes"></div>
+  <div class="container hero__content reveal">
+    <p class="eyebrow">Barbearia Imperial · desde 2019</p>
+    <h1 class="hero__title">Seu estilo<br><span class="text-gold">começa aqui.</span></h1>
+    <p class="hero__text">Cortes clássicos, barba feita na navalha e um atendimento à altura de quem não abre mão do próprio estilo. Tradição de barbearia com o padrão de um clube exclusivo.</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="#agendamento">Agendar horário</a>
+      <a class="btn btn--outline" href="#servicos">Conheça nossos serviços</a>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#sobre" aria-label="Rolar para baixo"><span></span></a>
+</section>
+
+<section class="about" id="sobre">
+  <div class="container about__grid">
+    <div class="about__frame reveal"><div class="about__photo"><span class="photo-label">IMPERIAL</span></div><div class="about__badge"><span class="about__badge-number">5+</span><span class="about__badge-label">anos de tradição</span></div></div>
+    <div class="reveal">
+      <p class="eyebrow">Sobre nós</p>
+      <h2 class="section-title">Uma barbearia feita para quem exige o melhor</h2>
+      <p class="about__text">A Barbearia Imperial nasceu do desejo de resgatar o ritual clássico da barbearia — navalha, toalha quente e conversa boa — unido a técnicas modernas de corte e styling. Cada visita é pensada como uma pausa: um espaço só para você, onde detalhe e precisão fazem parte do atendimento, não são um extra.</p>
+      <p class="about__text">Nossa equipe é formada por profissionais certificados, sempre atualizados com as tendências internacionais, mantendo o respeito pelas técnicas tradicionais que fizeram da barbearia um ofício de mestres.</p>
+      <div class="stats">
+        <div><span class="stat__number" data-count="5" data-suffix="+">0</span><span class="stat__label">anos de experiência</span></div>
+        <div><span class="stat__number" data-count="2000" data-suffix="+">0</span><span class="stat__label">clientes atendidos</span></div>
+        <div><span class="stat__number" data-count="5">0</span><span class="stat__label">profissionais especializados</span></div>
+        <div><span class="stat__number-text">Seg–Sáb</span><span class="stat__label">atendimento semanal</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">O que fazemos</p><h2 class="section-title">Serviços</h2><p class="section-subtitle">Cada serviço é executado com precisão de navalha e produtos de alta qualidade.</p></div>
+    <div class="services__grid">
+      <article class="service-card reveal"><div class="service-card__icon">✂</div><h3 class="service-card__title">Corte tradicional</h3><p class="service-card__desc">Corte clássico à tesoura e máquina, com acabamento perfeito na régua.</p><strong class="service-card__price">R$ 35</strong><button class="service-card__btn" data-service="Corte tradicional">Agendar →</button></article>
+      <article class="service-card service-card--featured reveal"><span class="service-card__tag">Mais pedido</span><div class="service-card__icon">✂</div><h3 class="service-card__title">Corte + Barba</h3><p class="service-card__desc">O combo completo: corte sob medida e barba desenhada na navalha.</p><strong class="service-card__price">R$ 55</strong><button class="service-card__btn" data-service="Corte + Barba">Agendar →</button></article>
+      <article class="service-card reveal"><div class="service-card__icon">♢</div><h3 class="service-card__title">Barba</h3><p class="service-card__desc">Toalha quente, navalha e óleos para uma barba alinhada e macia.</p><strong class="service-card__price">R$ 25</strong><button class="service-card__btn" data-service="Barba">Agendar →</button></article>
+      <article class="service-card reveal"><div class="service-card__icon">♙</div><h3 class="service-card__title">Corte infantil</h3><p class="service-card__desc">Atendimento paciente e divertido para os pequenos clientes.</p><strong class="service-card__price">R$ 30</strong><button class="service-card__btn" data-service="Corte infantil">Agendar →</button></article>
+      <article class="service-card reveal"><div class="service-card__icon">◇</div><h3 class="service-card__title">Sobrancelha</h3><p class="service-card__desc">Design de sobrancelha na navalha ou pinça, alinhado ao seu rosto.</p><strong class="service-card__price">R$ 15</strong><button class="service-card__btn" data-service="Sobrancelha">Agendar →</button></article>
+      <article class="service-card reveal"><div class="service-card__icon">✦</div><h3 class="service-card__title">Platinado</h3><p class="service-card__desc">Descoloração e tonalização completa com cuidado técnico especializado.</p><strong class="service-card__price">R$ 80</strong><button class="service-card__btn" data-service="Platinado">Agendar →</button></article>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="profissionais">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Quem cuida do seu visual</p><h2 class="section-title">Profissionais</h2><p class="section-subtitle">Mestres do corte e da navalha, cada um com sua assinatura.</p></div>
+    <div class="team__grid">
+      <article class="team-card reveal"><div class="team-card__photo"><span class="team-card__initials">CS</span></div><h3 class="team-card__name">Carlos Silva</h3><p class="team-card__role">Especialista em cortes clássicos</p><p class="team-card__desc">15 anos de ofício. Referência em cortes à tesoura e degradês impecáveis.</p></article>
+      <article class="team-card reveal"><div class="team-card__photo team-card__photo--2"><span class="team-card__initials">LM</span></div><h3 class="team-card__name">Lucas Mendes</h3><p class="team-card__role">Especialista em barba e navalha</p><p class="team-card__desc">Formado em Londres, traz técnicas de barbearia inglesa para o desenho de barba.</p></article>
+      <article class="team-card reveal"><div class="team-card__photo team-card__photo--3"><span class="team-card__initials">RA</span></div><h3 class="team-card__name">Rafael Alves</h3><p class="team-card__role">Especialista em coloração e platinado</p><p class="team-card__desc">Referência em transformações ousadas, do platinado ao visual mais clean.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="galeria">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Resultados que falam por si</p><h2 class="section-title">Galeria</h2><p class="section-subtitle">Cortes, barbas e um pouco do espaço da Imperial.</p></div>
+    <div class="gallery__grid">
+      <figure class="gallery-item reveal"><figcaption>Degradê navalhado</figcaption></figure>
+      <figure class="gallery-item reveal"><figcaption>Barba alinhada</figcaption></figure>
+      <figure class="gallery-item reveal"><figcaption>Espaço da barbearia</figcaption></figure>
+      <figure class="gallery-item reveal"><figcaption>Corte clássico</figcaption></figure>
+      <figure class="gallery-item reveal"><figcaption>Acabamento na navalha</figcaption></figure>
+      <figure class="gallery-item reveal"><figcaption>Platinado</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="avaliacoes">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Quem já passou por aqui</p><h2 class="section-title">Avaliações</h2></div>
+    <div class="reviews__grid">
+      <article class="review-card reveal"><div class="review-card__stars">★★★★★</div><p class="review-card__text">“Atendimento impecável. O Carlos entendeu exatamente o que eu queria só de olhar meu rosto. Virei cliente fixo.”</p><div class="review-card__author"><span class="review-card__avatar">PD</span><div><strong>Pedro Duarte</strong><span>Cliente desde 2021</span></div></div></article>
+      <article class="review-card reveal"><div class="review-card__stars">★★★★★</div><p class="review-card__text">“Ambiente muito bom, cheiroso, organizado. A barba feita na navalha pelo Lucas é outro nível.”</p><div class="review-card__author"><span class="review-card__avatar">FG</span><div><strong>Felipe Gomes</strong><span>Cliente desde 2022</span></div></div></article>
+      <article class="review-card reveal"><div class="review-card__stars">★★★★☆</div><p class="review-card__text">“Fiz o platinado com o Rafael e ficou exatamente como eu imaginei. Recomendo demais.”</p><div class="review-card__author"><span class="review-card__avatar">JR</span><div><strong>João Ribeiro</strong><span>Cliente desde 2023</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="agendamento">
+  <div class="container booking__grid">
+    <div class="booking__info reveal"><p class="eyebrow">Reserve seu horário</p><h2 class="section-title">Agendamento</h2><p class="section-subtitle">Preencha o formulário e confirme seu horário em menos de um minuto. Você também pode agendar direto pelo WhatsApp.</p><ul class="booking__list"><li>Confirmação imediata na tela</li><li>Lembrete enviado por WhatsApp</li><li>Cancelamento gratuito com 2h de antecedência</li></ul></div>
+    <form class="booking-form reveal" id="bookingForm" novalidate>
+      <div class="form-row">
+        <div class="form-group"><label for="nome">Nome completo</label><input id="nome" type="text" placeholder="Seu nome"><small class="form-error" id="err-nome"></small></div>
+        <div class="form-group"><label for="telefone">Telefone / WhatsApp</label><input id="telefone" type="tel" placeholder="(11) 91234-5678"><small class="form-error" id="err-telefone"></small></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="servico">Serviço</label><select id="servico"><option value="">Selecione um serviço</option><option>Corte tradicional</option><option>Corte + Barba</option><option>Barba</option><option>Corte infantil</option><option>Sobrancelha</option><option>Platinado</option></select><small class="form-error" id="err-servico"></small></div>
+        <div class="form-group"><label for="barbeiro">Barbeiro</label><select id="barbeiro"><option value="">Selecione um barbeiro</option><option>Carlos Silva</option><option>Lucas Mendes</option><option>Rafael Alves</option></select><small class="form-error" id="err-barbeiro"></small></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="data">Data</label><input id="data" type="date"><small class="form-error" id="err-data"></small></div>
+        <div class="form-group"><label for="horario">Horário</label><select id="horario"><option value="">Selecione um horário</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option></select><small class="form-error" id="err-horario"></small></div>
+      </div>
+      <button class="btn btn--gold btn--block" type="submit">Confirmar agendamento</button>
+      <div class="form-success" id="formSuccess" hidden><span>✓</span><div><strong>Agendamento recebido!</strong><p id="formSuccessText"></p></div></div>
+    </form>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="container contact__grid">
+    <div class="reveal"><p class="eyebrow">Venha nos visitar</p><h2 class="section-title">Localização e contato</h2>
+      <ul class="contact__list">
+        <li>📍 Rua das Tesouras, 245 — Jardim Imperial, São Paulo/SP</li>
+        <li>☎ (11) 3456-7890</li>
+        <li>💬 (11) 91234-5678 — WhatsApp</li>
+      </ul>
+      <table class="hours-table"><caption>Horário de funcionamento</caption><tbody><tr><th>Segunda – Sexta</th><td>09:00 — 20:00</td></tr><tr><th>Sábado</th><td>09:00 — 18:00</td></tr><tr><th>Domingo</th><td>Fechado</td></tr></tbody></table>
+      <a class="btn btn--outline btn--whatsapp" href="https://wa.me/5511912345678" target="_blank" rel="noopener">💬 Falar pelo WhatsApp</a>
+    </div>
+    <div class="contact__map reveal"><div class="contact__map-pin">📍</div><span class="contact__map-label">Espaço reservado para Google Maps</span></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a class="logo logo--footer" href="#inicio"><span class="logo__icon">✂</span><span>Barbearia<strong>Imperial</strong></span></a><p>Tradição de barbearia, padrão de clube. Seu estilo começa aqui.</p></div>
+    <div class="footer__links"><h3>Links rápidos</h3><ul><li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#profissionais">Profissionais</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#contato">Contato</a></li></ul></div>
+    <div class="footer__contact"><h3>Contato</h3><p>Rua das Tesouras, 245<br>Jardim Imperial, São Paulo/SP</p><p>(11) 3456-7890</p><p>contato@barbeariaimperial.com.br</p></div>
+  </div>
+  <div class="footer__bottom"><div class="container">© <span id="year"></span> Barbearia Imperial. Todos os direitos reservados.</div></div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
